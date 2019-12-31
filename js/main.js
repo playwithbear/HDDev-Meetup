@@ -46,8 +46,8 @@
 		});
 	});
 
-	// Galery Owl
-	$('#galery-owl').owlCarousel({
+	// gallery Owl
+	$('#gallery-owl').owlCarousel({
 		items:1,
 		loop:true,
 		margin:0,

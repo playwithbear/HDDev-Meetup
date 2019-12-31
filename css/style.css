@@ -18,7 +18,7 @@ LOGO
 NAVIGATION
 HOME
 ABOUT
-GALERY
+gallery
 SPEAKERS
 EVENTS
 SPONSORS
@@ -70,13 +70,13 @@ h4 {
 }
 
 a {
-  color: #0b0f28;
+  color: #dd0a37;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
 
 a:hover, a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   outline: none;
   color: #dd0a37;
 }
@@ -100,6 +100,27 @@ ul, ol {
 }
 
 .main-btn:hover, .main-btn:focus {
+  color: #FFF;
+  opacity: 0.8;
+}
+
+.event-btn {
+  display: inline-block;
+  padding: 14px 50px;
+  background: #dd0a37;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.event-btn a {
+  color: #fff;
+}
+
+.event-btn:hover, .event-btn:focus {
   color: #FFF;
   opacity: 0.8;
 }
@@ -272,6 +293,16 @@ textarea.input {
   transition: 0.3s all;
 }
 
+.main-nav li.cta a {
+  background-color:#dd0a37;
+  color: #fff !important;
+}
+
+.main-nav li.cta a:hover, .main-nav li.cta a:focus {
+  background-color:transparent;
+  color: #dd0a37 !important;
+}
+
 #header.transparent-navbar .main-nav li a {
   color: #FFF;
 }
@@ -378,6 +409,14 @@ textarea.input {
   color: #FFF;
 }
 
+.home-content p {
+  /* background-color: #fff; */
+  color: #fff;
+  opacity: 80%;
+  padding: 1.5em;
+  border-radius: 2px;;
+}
+
 #page-wrapper {
   background-color: #F9F9FA;
 }
@@ -410,10 +449,10 @@ textarea.input {
 }
 
 /*=========================================================
-	GALERY
+	gallery
 ===========================================================*/
 
-#galery-owl .owl-item .galery-item {
+#gallery-owl .owl-item .gallery-item {
   opacity: 0.5;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -427,24 +466,24 @@ textarea.input {
   transition: 0.6s transform, 0.6s opacity, 0.6s -webkit-transform;
 }
 
-#galery-owl.owl-theme .owl-item.active+.owl-item .galery-item {
+#gallery-owl.owl-theme .owl-item.active+.owl-item .gallery-item {
   -webkit-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
 }
 
-#galery-owl.owl-theme .owl-item.active .galery-item {
+#gallery-owl.owl-theme .owl-item.active .gallery-item {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-#galery-owl.owl-theme .owl-nav {
+#gallery-owl.owl-theme .owl-nav {
   margin-top: 0px;
 }
 
-#galery-owl.owl-theme .owl-nav [class*='owl-'] {
+#gallery-owl.owl-theme .owl-nav [class*='owl-'] {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -461,17 +500,21 @@ textarea.input {
   margin: 0;
 }
 
-#galery-owl.owl-theme .owl-prev {
+#gallery-owl.owl-theme .owl-prev {
   left: 15px;
 }
 
-#galery-owl.owl-theme .owl-next {
+#gallery-owl.owl-theme .owl-next {
   right: 15px;
 }
 
 /*=========================================================
 	SPEAKERS
 ===========================================================*/
+
+.speaker-content {
+  padding-bottom: 90px;
+}
 
 #speakers {
   background-color: #F9F9FA;
@@ -713,6 +756,11 @@ textarea.input {
   z-index: 10;
 }
 
+.past-event .event-day {
+  border: #dd0a37 4px solid;
+  background-color: #FFF;
+}
+
 .event .event-hour {
   position: absolute;
   left: 62px;
@@ -753,6 +801,10 @@ textarea.input {
   font-size: 12px;
 }
 
+.past-event .event-day .day, .past-event .event-day .year {
+  color: #0b0f28;
+}
+
 .event .event-content {
   padding-left: 160px;
   min-height: 120px;
@@ -766,8 +818,12 @@ textarea.input {
   color: #dd0a37;
 }
 
-.event .event-content a {
+.event .event-content p a {
   color: #dd0a37;
+}
+
+.event .event-content a {
+  color: #fff;
 }
 
 .download-btn {
@@ -775,9 +831,25 @@ textarea.input {
   text-align: center;
 }
 
+.align-l {
+  text-align: left;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.align-r {
+  text-align: right;
+}
+
 /*=========================================================
 	SPONSORS
 ===========================================================*/
+
+.sponsor-content {
+  padding-bottom: 90px;
+}
 
 .sponsor {
   display: block;
@@ -812,9 +884,24 @@ textarea.input {
   color: #dd0a37;
 }
 
+.contact h3 span.email a {
+  color: #0b0f28;
+}
+
 #map {
   height: 380px;
   margin-top: 60px;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 /*=========================================================

@@ -6,7 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Event HTML Template</title>
+	<!-- Favico etc -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favico/favicon-16x16.png">
+	<link rel="manifest" href="img/favico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favico/ms-icon-144x144.png">
+
+	<title>HDdev - Developer Network in Huddersfield</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -43,7 +61,7 @@
 				<div class="navbar-brand">
 					<a class="logo" href="index.html">
 						<img class="logo-img" src="./img/logo.png" alt="logo">
-						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
+						<img class="logo-alt-img" src="./img/logo-alt2.png" alt="logo">
 					</a>
 				</div>
 				<!-- /Logo -->
@@ -61,11 +79,12 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#schedule">Schedule</a></li>
+					<!-- <li><a href="#schedule">Schedule</a></li> -->
 					<li><a href="#speakers">Speakers</a></li>
 					<li><a href="#sponsors">Sponsors</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<!-- <li><a href="blog.html">Blog</a></li> -->
+					<li class="cta"><a href="#">Register</a></li>
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -77,7 +96,7 @@
 	<!-- Home -->
 	<div id="home">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background01.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(./img/conference-three.jpg)" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- home wrapper -->
@@ -89,9 +108,10 @@
 					<!-- home content -->
 					<div class="col-md-8 col-md-offset-2">
 						<div class="home-content">
-							<h1>Lorem ipsum dolor sit amet</h1>
-							<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-							<a href="#" class="main-btn">Buy Ticket</a>
+							<h1>Our next event:</h1>
+							<h4 class="lead">Thursday, xth February, 18:30</h4>
+							<p>Cafe Ollo, 7 Northumberland Street, Huddersfield, HD1 1RL</p>
+							<a href="#" class="main-btn">Register</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -112,15 +132,21 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>About</span> <span style="color: #dd0a37;">Event</span></h3>
+					<h3 class="title"><span>About</span> <span style="color: #dd0a37;">HDdev</span></h3>
 				</div>
 				<!-- /section title -->
 
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-							dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>
+							HDdev is a meetup and networking group based in Huddersfield and surrounding areas. Set up due to a lack of local 
+							networking opportunities outside of Leeds or Manchester, this group is not technology specific, offering a little 
+							something for anyone within the web industry.
+						</p>
+						<p>
+							If you have something to say, we'd love to have you! Please see our <a href="#speakers">speakers</a> section for more information.
+						</p>
 					</div>
 					<!-- /about content -->
 
@@ -129,42 +155,36 @@
 						<!-- row -->
 						<div class="row">
 							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+							<div class="col-md-4 col-sm-4 col-xs-4">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="900" data-speed="1500">0</span>+</h3>
-									<p>Hours</p>
+									<h3><span class="counter" data-from="140000" data-to="162949" data-speed="1500">0</span>+</h3>
+									<p>Population</p>
 								</div>
 							</div>
 							<!-- /number -->
 
 							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+							<div class="col-md-4 col-sm-4 col-xs-4">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="750" data-speed="1500">0</span>+</h3>
-									<p>Venues</p>
+									<h3>≈<span class="counter" data-from="0" data-to="500" data-speed="1500">0</span></h3>
+									<p>Developers*</p>
 								</div>
 							</div>
 							<!-- /number -->
 
 							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+							<div class="col-md-4 col-sm-4 col-xs-4">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="50" data-speed="1500">0</span>+</h3>
-									<p>Country</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="20" data-speed="1500">0</span>+</h3>
-									<p>Speakers</p>
+									<h3>1</h3>
+									<p>Network</p>
 								</div>
 							</div>
 							<!-- /number -->
 						</div>
 						<!-- /row -->
+						<div>
+							* Based on ONS statistics for % of UK population
+						</div>
 					</div>
 					<!-- /Numbers -->
 				</div>
@@ -175,68 +195,40 @@
 	</div>
 	<!-- /About -->
 
-	<!-- Galery -->
-	<div id="galery">
+	<!-- gallery -->
+	<div id="gallery">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<!-- galery owl -->
-				<div id="galery-owl" class="owl-carousel owl-theme">
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
+				<!-- gallery owl -->
+				<div id="gallery-owl" class="owl-carousel owl-theme">
+					<!-- gallery item -->
+					<div class="gallery-item">
+						<img src="./img/gallery04.jpg" alt="people sitting on stairs around a laptop">
 					</div>
-					<!-- /galery item -->
+					<!-- /gallery item -->
 
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery02.jpg" alt="">
+					<!-- gallery item -->
+					<div class="gallery-item">
+						<img src="./img/gallery05.jpg" alt="people crowded round a laptop">
 					</div>
-					<!-- /galery item -->
+					<!-- /gallery item -->
 
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/galery03.jpg" alt="">
+					<!-- gallery item -->
+					<div class="gallery-item">
+						<img src="./img/gallery03.jpg" alt="chairs laid out for a conference">
 					</div>
-					<!-- /galery item -->
+					<!-- /gallery item -->
 
 				</div>
-				<!-- /galery owl -->
+				<!-- /gallery owl -->
 			</div>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /Galery -->
-
-	<!-- Video CTA -->
-	<div id="video-cta" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background02.jpg)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
-
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<a class="video-play" href="#">
-							<i class="fa fa-play"></i>
-						</a>
-						<h2>Watch this video</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-				</div>
-				<!-- /cta content -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Video CTA -->
+	<!-- /gallery -->
 
 	<!-- Event Schedule -->
 	<div id="schedule" class="section">
@@ -253,60 +245,39 @@
 				<div class="col-md-8 col-md-offset-2">
 
 					<div class="events-wrapper">
+						
 						<!-- event -->
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">15</span>
-									<span class="year">Feb, 2018</span>
+									<span class="day">XX</span>
+									<span class="year">Feb, 2020</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
+								<p class="event-time">
+									<i class="fa fa-clock-o"></i> 6 : 30 PM - 9 : 00 PM &nbsp;
+									<i class="fa fa-map-o"></i> Cafe Ollo, 7 Northumberland Street, Huddersfield, HD1 1RL
+								</p>
 								<h3 class="event-title">His id altera fabellas facilisis. Has eros assueverit cu</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
+								<p><i class="fa fa-user-o"></i> Speakers: <a href="#">TBC</a></p>
+								<div class="align-c">
+									<a href="#" class="event-btn">Register</a>										
+								</div>
 							</div>
 						</div>
-						<!-- /event -->
+						<!-- /event -->				
 
 						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Perpetua consectetuer definitiones id sea, mei utinam eripuit ne</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">At mucius deserunt delicatissimi eam, labitur detraxit ut sit</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
+						<div class="event past-event">
 							<div class="event-day">
 								<div>
-									<span class="day">16</span>
-									<span class="year">Feb, 2018</span>
+									<span class="year">Past <br>Events</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">His id altera fabellas facilisis. Has eros assueverit cu</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
+								<!-- NULL -->
 							</div>
 						</div>
 						<!-- /event -->
@@ -315,49 +286,36 @@
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">At mucius deserunt delicatissimi eam, labitur detraxit ut sit</h3>
+								<p class="event-time">
+									<i class="fa fa-clock-o"></i> 6 : 30 PM - 9 : 00 PM &nbsp;
+									<i class="fa fa-map-o"></i> Cafe Ollo, 7 Northumberland Street, Huddersfield, HD1 1RL
+								</p>
+								<h3 class="event-title">No past events</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
+								<p><i class="fa fa-user-o"></i> Speakers: <a href="#">TBC</a></p>
 							</div>
 						</div>
 						<!-- /event -->
 
 						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">17</span>
-									<span class="year">Feb, 2018</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">His id altera fabellas facilisis. Has eros assueverit cu</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
+						<!-- <div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
+								<p class="event-time">
+									<i class="fa fa-clock-o"></i> 6 : 30 PM - 9 : 00 PM &nbsp;
+									<i class="fa fa-map-o"></i> Cafe Ollo, 7 Northumberland Street, Huddersfield, HD1 1RL
+								</p>
 								<h3 class="event-title">At mucius deserunt delicatissimi eam, labitur detraxit ut sit</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p>By <a href="#">John Doe</a></p>
+								<p><i class="fa fa-user-o"></i> Speakers: <a href="#">TBC</a></p>
 							</div>
-						</div>
+						</div> -->
 						<!-- /event -->
-					</div>
 
-					<div class="download-btn">
-						<a href="#" class="main-btn">Download Schedule</a>
 					</div>
 
 				</div>
+
 			</div>
 			<!-- /row -->
 		</div>
@@ -373,9 +331,24 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Speakers</span></h3>
+					<h3 class="title"><span>Latest</span> <span style="color: #dd0a37;">Speakers</span></h3>
 				</div>
 				<!-- section title -->
+
+				<!-- speakers intro -->
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<!-- section content -->
+					<div class="speaker-content">
+						<p>
+							From dev-ops mastermind, to UX artiste, this event would be nothing without it's speakers.
+						</p>
+						<p>
+							If you're interested in speaking at one of our upcoming events, please contact Jon at  <a href="mailto:hello@hddev.co.uk">hello@hddev.co.uk</a>.
+						</p>
+					</div>
+					<!-- /section content -->
+				</div>
+				<!-- /speakers intro -->
 
 				<!-- speaker -->
 				<div class="col-md-4 col-sm-6">
@@ -391,8 +364,8 @@
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Your Name Here</h2>
+								<span>Awesome speaker</span>
 							</div>
 						</div>
 					</div>
@@ -413,8 +386,8 @@
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Your Name Here</h2>
+								<span>Awesome speaker</span>
 							</div>
 						</div>
 					</div>
@@ -435,8 +408,8 @@
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Your Name Here</h2>
+								<span>Awesome speaker</span>
 							</div>
 						</div>
 					</div>
@@ -516,8 +489,23 @@
 				</div>
 				<!-- /section title -->
 
+				<!-- sponsors intro -->
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<!-- section content -->
+					<div class="sponsor-content">
+						<p>
+							A successful meetup unfortunately cannot succeed without sponsors. From the cost of the venue, meetup fees, hosting, and other costs.
+						</p>
+						<p>
+							If you would be interested in sponsoring HDdev, please contact Jon at <a href="mailto:hello@hddev.co.uk">hello@hddev.co.uk</a>.
+						</p>
+					</div>
+					<!-- /section content -->
+				</div>
+				<!-- /sponsors intro -->
+
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
 						<img src="./img/sponsor.png" alt="">
 					</a>
@@ -525,7 +513,7 @@
 				<!-- /sponsor -->
 
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
 						<img src="./img/sponsor.png" alt="">
 					</a>
@@ -533,7 +521,7 @@
 				<!-- /sponsor -->
 
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
 						<img src="./img/sponsor.png" alt="">
 					</a>
@@ -541,7 +529,7 @@
 				<!-- /sponsor -->
 
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
 						<img src="./img/sponsor.png" alt="">
 					</a>
@@ -549,7 +537,7 @@
 				<!-- /sponsor -->
 
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
 						<img src="./img/sponsor.png" alt="">
 					</a>
@@ -557,23 +545,7 @@
 				<!-- /sponsor -->
 
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
 						<img src="./img/sponsor.png" alt="">
 					</a>
@@ -600,9 +572,29 @@
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="cta-content text-center">
-						<h2>Get Ticket Now!</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="#" class="main-btn">Buy Ticket</a>
+						<h2>Want to stay up to date?</h2>
+
+						<!-- Begin Mailchimp Signup Form -->
+						<div id="mc_embed_signup">
+							<form action="https://hddev.us4.list-manage.com/subscribe/post?u=b3fb216915815045002338426&amp;id=33b09130ca" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<input type="email" value="" name="EMAIL" class="email hddev-input" id="mce-EMAIL" placeholder="email address" required>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_b3fb216915815045002338426_33b09130ca" tabindex="-1" value="">
+									</div>
+									<div class="clear">
+										<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="main-btn button">
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--End mc_embed_signup-->
+
+						<p>
+							<br>
+							<small>Your email will only be used to contact you about these events.</small>
+						</p>
 					</div>
 				</div>
 				<!-- /cta content -->
@@ -626,28 +618,18 @@
 				<!-- /section title -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<!-- <div class="col-sm-6">
 					<div class="contact">
 						<h3>Address</h3>
-						<p>2635 Simons Hollow Road, NEW YORK</p>
+						<p>Contact form?</p>
 					</div>
-				</div>
+				</div> -->
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div>
 					<div class="contact">
-						<h3>Phone</h3>
-						<p>570-751-2415</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Email</h3>
-						<a href="#">event@support.com</a>
+						<h3><i class="fa fa-envelope-o"></i> <span class="email"><a href="mailto:hello@hddev.co.uk">hello@hddev.co.uk</a></span></h3>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -658,7 +640,12 @@
 		<!-- /container -->
 
 		<!-- Map -->
-		<div id="map"></div>
+		<div id="map">
+			<iframe 
+				width="100%" height="100%"
+				src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;coord=53.64899,-1.7809&amp;q=Cafe%20Ollo%207%20Northumberland%20Street+(Cafe%20Ollo)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" 
+				frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		</div>
 		<!-- /Map -->
 	</div>
 	<!-- /Contact -->
@@ -677,11 +664,21 @@
 							<img class="logo-img" src="./img/logo.png" alt="logo">
 						</a>
 					</div>
+
+					<!-- copyright -->
+					<div class="align-c">
+						<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <br>
+							This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</span>
+					</div>
+					<!-- /copyright -->
 				</div>
 				<!-- /footer logo -->
 
 				<!-- contact social -->
-				<div class="col-md-4 col-md-push-4">
+				<!-- <div class="col-md-4 col-md-push-4">
 					<div class="contact-social">
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
@@ -690,16 +687,8 @@
 						<a href="#"><i class="fa fa-pinterest"></i></a>
 						<a href="#"><i class="fa fa fa-linkedin"></i></a>
 					</div>
-				</div>
+				</div> -->
 				<!-- /contact social -->
-
-				<!-- copyright -->
-				<div class="col-md-4 col-md-pull-8">
-					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<!-- /copyright -->
 
 			</div>
 			<!-- /row -->
